@@ -1,15 +1,35 @@
 // 15번
-let star5 = '';
+let star = '';
 for (let i = 4; i >= 0; i--) {
   for (let j = 0; j < 5; j++) {
     if (j === i) {
-      star5 += '*';
+      star += '*';
     } else if (j > i) {
-      star5 += '**';
+      star += '**';
     } else {
-      star5 += ' ';
+      star += ' ';
     }
   }
-  star5 += '\n';
+  star += '\n';
 }
-console.log(star5);
+console.log(star);
+
+
+const line = 10;
+let star2 = '';
+for (let i = 0; i < line; i++) {
+  // space
+  for (let j = line - 1; j > i; j--) {
+    star2 += ' ';
+  }
+  // single star
+  for (let k = i; k <= i; k++) {
+    star2 += '*';
+  }
+  // double star
+  for (let l = 1; l <= i; l++) {
+    star2 += '**';
+  }
+  star2 += '\n';
+}
+console.log(star2);

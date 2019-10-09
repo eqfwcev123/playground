@@ -1,13 +1,27 @@
 // 14번
-let star4 = '';
+let star = '';
 for (let i = 4; i >= 0; i--) {
   for (let j = 0; j < 5; j++) {
     if (j >= i) {
-      star4 += '*';
+      star += '*';
     } else {
-      star4 += ' ';
+      star += ' ';
     }
   }
-  star4 += '\n';
+  star += '\n';
 }
-console.log(star4);
+console.log(star);
+
+
+const line = 10;
+let star2 = '';
+for (let i = 0; i < line; i++) {
+  for (let j = line - 1; j > i; j--) {
+    star2 += ' ';
+  }
+  for (let k = 0; k <= i; k++) {
+    star2 += '*';
+  }
+  star2 += '\n';
+}
+console.log(star2);
