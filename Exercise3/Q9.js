@@ -13,4 +13,9 @@ function getMaxId() {
   );
 }
 
+function getMaxId2(){
+  // Math.max 를 이용한 최대값 구하기
+  return Math.max(...todos.map(todo => todo.id));
+}
+
 console.log(getMaxId()); // 3
