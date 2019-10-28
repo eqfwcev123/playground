@@ -12,8 +12,7 @@ const todos = [
 ];
 
 function getValues(key) {
-  const newArr = todos.map((todo) => todo[key]);
-  return newArr;
+  return todos.map((todo) => todo[key]);
 }
 
 console.log(getValues('id')); // [3, 2, 1]
