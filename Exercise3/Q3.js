@@ -12,14 +12,15 @@ const todos = [
 ];
 
 function sortBy(key) {
-  return todos.sort((a, b) => a[key] > b[key] ? 1 : a[key] < b[key] ? -1 : 0)
+  let newArr = [...todos];
+  return newArr.sort((a, b) => a[key] > b[key] ? 1 : a[key] < b[key] ? -1 : 0)
   // 3 > 2 ? 1 : (3 < 2 ? -1 : 0) = 1 (양수) 3 은 2 뒤에 가야한다
   // 3 > 1 ? 1 : (3 < 1 ? -1 : 0) = 1 (양수) 3 은 1 뒤에 가야한다
   // 2 > 1 ? 1 : (2 < 1 ? -1 : 0) = 1 (양수) 2 는 1 뒤에 가야한다
 }
 
 console.log(sortBy('id'));
-
+console.log(todos)
 /*
 [
   { id: 1, content: 'Javascript', completed: false },
