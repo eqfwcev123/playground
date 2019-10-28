@@ -6,7 +6,7 @@ let todos = [
 ];
 
 function countCompletedTodos() {
-  return todos.reduce((acc, todo) => todo.completed ? ++acc : acc, 0);
+  return todos.reduce((acc, todo) => todo.completed ? acc + 1 : acc, 0);
 }
 
 // console.log(0 + );

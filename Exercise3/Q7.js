@@ -7,6 +7,9 @@ let todos = [
 function toggleCompletedAll() {
   // todo.completed 가 false 면 : 뒤에있는 식을 실행
   return todos.map(todo => todo.completed ? todo : Object.assign(todo, { completed: !todo.completed }));
+
+  // spread 문법 사용
+  // return todos.map(todo => ({...todo, completed:true}));
 }
 
 toggleCompletedAll();
