@@ -6,8 +6,8 @@ let todos = [
 
 function addTodo(newTodo) {
   // return todos.splice(0, 0, newTodo);
-  // todos = [newTodo, ...todos];
-  return todos = [newTodo].concat(todos);
+  todos = [newTodo, ...todos];
+  // return todos = [newTodo].concat(todos);
 }
 
 addTodo({ id: 4, content: 'Test', completed: false });
